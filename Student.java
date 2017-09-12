@@ -8,37 +8,38 @@ import java.util.Date;
  * or hashCode() method
  * 
  */
-public class Student implements Comparable {
+public class Student {
 
 	/**
 	 * student id
 	 */
-	private int id;
+	public int id;
 
 	/**
 	 * student name and surname separated by the whitespace for example:
 	 * fullName = "David Luis";
 	 */
-	private String fullName;
+	public String fullName;
 
 	/**
 	 * student date of birth in "yyyy-MM-dd" format
 	 */
-	private Date birthDate;
+	public Date birthDate;
 
 	/**
 	 * student average mark
 	 */
-	private double avgMark;
+	public double avgMark;
 
-	public Student(int id, String fullName, Date birthDate, double avgMark) {
+	/*public Student(int id, String fullName, Date birthDate, double avgMark) {
 		this.id = id;
 		this.fullName = fullName;
 		this.birthDate = birthDate;
-		this.avgMark = avgMark;
+		this.avgMark = avgMark;*/
 	}
 
 	public int getId() {
+    
 		return id;
 	}
 
@@ -71,22 +72,22 @@ public class Student implements Comparable {
 	}
 
 	@Override
-	public int hashCode() {
+/*	public int hashCode() {
 		return super.hashCode();
 	}
 
 	@Override
 	public boolean equals(Object obj) {
 		return super.equals(obj);
-	}
+	}*/
 	
 	
 	/**
 	 * DO NOT change this method it will be used during the task check
 	 */
 	@Override
-	public int compareTo(Object o) {
+/*	public int compareTo(Object o) {
 		Student other = (Student) o;
 		return (this.fullName.compareTo(other.fullName));
-	}
+	}*/
 }
