@@ -7,12 +7,12 @@ public class Main extends Student {
 		//You may test that your code works find here
 		//Please check that your code works and has no 
 		//compilation problems before to submit
-Student s =new Student();
+Student s = new Student();
 s.setId(41);
 int b=  s.getId();
 System.out.println("id is "+b);
 s.setFullName("surya mopuru");
-String a=s.getFullname();
+String a=s.getFullName();
 System.out.println("full name is "+a);
 s.setBirthDate(1997);
 int c=s.getBirthDate();

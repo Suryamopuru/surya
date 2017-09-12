@@ -24,7 +24,7 @@ public class Student {
 	/**
 	 * student date of birth in "yyyy-MM-dd" format
 	 */
-	public Date birthDate;
+	public int birthDate;
 
 	/**
 	 * student average mark
@@ -35,8 +35,8 @@ public class Student {
 		this.id = id;
 		this.fullName = fullName;
 		this.birthDate = birthDate;
-		this.avgMark = avgMark;*/
-	}
+		this.avgMark = avgMark;
+	}*/
 
 	public int getId() {
     
@@ -55,11 +55,11 @@ public class Student {
 		this.fullName = fullName;
 	}
 
-	public Date getBirthDate() {
+	public int getBirthDate() {
 		return birthDate;
 	}
 
-	public void setBirthDate(Date birthDate) {
+	public void setBirthDate(int birthDate) {
 		this.birthDate = birthDate;
 	}
 
@@ -71,8 +71,8 @@ public class Student {
 		this.avgMark = avgMark;
 	}
 
-	@Override
-/*	public int hashCode() {
+/*	@Override
+	public int hashCode() {
 		return super.hashCode();
 	}
 
@@ -85,8 +85,8 @@ public class Student {
 	/**
 	 * DO NOT change this method it will be used during the task check
 	 */
-	@Override
-/*	public int compareTo(Object o) {
+/*	@Override
+	public int compareTo(Object o) {
 		Student other = (Student) o;
 		return (this.fullName.compareTo(other.fullName));
 	}*/
